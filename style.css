@@ -47,6 +47,11 @@ button{
     padding: 10px 50px;
     box-shadow: 0px 0px 16px -5px #000;
 }
+button:hover{
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
 .icons img{
     display: inline-block;
     font-size: 0.6rem;
@@ -58,9 +63,41 @@ button{
     height: 50px;
     padding: 10px;
 }
-.content{
-    /* margin-top: 50px; */
+.icons img:hover{
+    background-color: var(--Soft-Magenta);
+    filter: invert(0);
+    cursor: pointer;
 }
 .content .icons{
     margin: 90px 0 -150px 370px;
+}
+@media (max-width:375px) {
+    header img {
+        margin-left: 0px;
+        width: 150px;
+    }
+    body {
+        padding: 15px;
+    }
+    main > img {
+        width: 345px;
+        margin: 45px 0px;
+    }
+    main {
+        display: inline;
+    }
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .content .icons {
+        margin: 35px 106px;
+    }
+    .icons img {
+        width: 40px;
+        height: 40px;
+    }
 }
